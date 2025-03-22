@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form fieldset {
+    background-color: rgba(172, 255, 47, 0.486);
+    border: 2px solid green;
+    color: green;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+    justify-content: center;
+}
+
+legend {
+    color: red;
+    background-color: rgba(248, 82, 82, 0.459);
+    border: 2px solid green;
+}
+
+.form div {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+label {
+    width: 100px;
+}
+
+.botao {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; 
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tabelinha da atividade</h1>
+    <table border="1" style="text-align: center;">
+    
+
+    <tbody>
+        <tr>
+            <th rowspan="2">Autor</th>
+            <th colspan="3">Música</th>
+        </tr>
+        <tr>
+             <!--   <td></td>-->
+             <th>Nome</th>
+             <th>Letra</th>
+             <th>Cifra</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Chico Buarque</td>
+            <td>A Banda</td>
+            <td>X</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>Beatriz</td>
+            <td>--</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>Choro Bandido</td>
+            <td>--</td>
+            <td>X</td>
+        </tr>
+    </tbody>
+    </table>
+    
+
+    <form action="">
+        <fieldset style="width: fit-content;">
+            <h3>Cadastro de novos materiais de aula</h3>
+            <fieldset>
+                <legend>Lista de materiais já cadastrados</legend>
+                <ol>
+                    <li>Lápis</li>
+                    <li>Caneta</li>
+                    <li>Papel</li>
+                    <li>Tesoura</li>
+                </ol>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Cadastar novo material</legend>
+                <input type="text" name="Nome" id="Nome" placeholder="Nome">
+               
+                <br>               
+                <input type="text" name="Preco" id="Preco" placeholder="Preço">
+                
+                <br>
+                <label for="Quantidade">Quantidade:</label>
+                <input type="number">
+                </select>
+                
+                <br>
+                <label for="devolucao">Devolução:</label>
+                <input type="radio" name="opcao" value="Sim"> Sim
+                <input type="radio" name="opcao" value="Nao"> Não
+                
+                <br>                
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Cadastar">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Dados do último material cadastrado</legend>
+                <table border="1" style="width: 200px; text-align: center;">
+                <tbody>
+                    <tr>
+                    <th>Nome</th>
+                    <td>Lápis</td>
+                </tr>
+                <tr>
+                    <th>Preço</th>
+                    <td>R$ 12,30</td>
+                </tr>
+                <tr>
+                    <th>Quantidade</th>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <th>Devolução</th>
+                    <td>Sim</td>
+                </tr>
+                </tbody>
+            </table>
+            </fieldset>
+        </fieldset>
+    </form>
+
+    <div class="sistema-form" style="border: 1px solid black;">
+        <h2 style="background-color: yellow; text-transform: uppercase;">sistema de gestão acadêmica</h2>
+        <h2 style="text-transform: uppercase;">manutenção de usuários do sistema interno</h2>
+
+        <form method="post">
+            <fieldset class="formulario__campo">
+                <label for="login">Login</label>
+                <input type="text">
+            </fieldset>
+            
+            <fieldset class="formulario__campo">
+                <label for="senha">Senha</label>
+                <input type="password">
+            </fieldset>
+
+            <fieldset class="formulario__campo">
+                <label for="status">Status</label>
+                <select name="status" id="status">
+                    <option value="Inativo">Inativo</option>
+                    <option value="Ativo">Ativo</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="formulario__campo">
+                <label for="tipo">Tipo</label>
+                <input type="radio" name="opcao" value="Tecnico"> Técnico
+                <input type="radio" name="opcao" value="Professor"> Professor
+                <input type="radio" name="opcao" value="Aluno"> Aluno
+            </fieldset>
+            
+            <fieldset class="formulario__campo">
+                <label for="dataCriacao">Data Criação</label>
+                <input type="date" name="dataCriacao"> 
+            </fieldset>
+
+            <fieldset class="formulario__campo">
+                <label for="tipo">Perfil</label>
+                <input type="radio" name="opcaoTipo" value="Convidado"> Convidado
+                <input type="radio" name="opcaoTipo" value="Administrador"> Administrador
+            </fieldset>
+
+            <fieldset class="formulario__campo observacoes">
+                <label for="Observacoes">Observações</label>
+                <textarea name="txtObservacoes" id="txtObservacoes" rows="8" cols="60"></textarea>
+            </fieldset>
+
+            <fieldset class="formulario__campo">
+                <label for="modulos">Módulos</label>
+                <input type="checkbox" name="compras" id="">Compras
+                <input type="checkbox" name="biblioteca" id="">Biblioteca
+                <input type="checkbox" name="academico" id="">Acadêmico
+                <input type="checkbox" name="documentacao" id="">Documentação
+                <input type="checkbox" name="recursosHumanos" id="">Recursos Humanos
+            </fieldset>
+            
+            <div class="botoes">
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Excluir</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
