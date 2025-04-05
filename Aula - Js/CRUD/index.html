@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Pets e Tutores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Sistema de Cadastro</h1>
+
+  <section class="form">
+    <h2>Cadastrar Tutor</h2>
+    <input type="text" id="nomeTutor" placeholder="Nome do Tutor">
+    <button onclick="controller.adicionarTutor()">Adicionar Tutor</button>
+  </section>
+
+  <section class="form">
+    <h2>Cadastrar Pet</h2>
+    <select id="tutorPetSelect"></select>
+    <input type="text" id="nomePet" placeholder="Nome do Pet">
+    <input type="number" id="idadePet" placeholder="Idade do Pet">
+    <button onclick="controller.adicionarPet()">Adicionar Pet</button>
+  </section>
+
+  <section>
+    <h2>Lista de Tutores</h2>
+    <ul id="listaTutores"></ul>
+  </section>
+
+  <section>
+    <h2>Lista de Pets</h2>
+    <ul id="listaPets"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
