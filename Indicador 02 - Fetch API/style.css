@@ -1,0 +1,120 @@
+/* style.css */
+
+/* Reset básico para consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos globais */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+  }
+  
+  /* Container do cabeçalho */
+  .cabecalho__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Logo: remove a imagem definindo-a como não exibida */
+  .logo__item img {
+    display: none;
+  }
+  
+  /* Área de pesquisa */
+  .cabecalho__pesquisar__item {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .form__pesquisa {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilo do campo de pesquisa */
+  .pesquisar__input {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  /* Estilo do botão de pesquisar */
+  .pesquisar__btn {
+    background-color: #0073e6;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pesquisar__btn:hover {
+    background-color: #005bb5;
+  }
+  
+  .cabecalho__icones__item a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .cabecalho__switch {
+    margin-left: 15px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+  }
+  
+  .cabecalho__switch-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .cabecalho__switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 22px;
+  }
+  
+  .cabecalho__switch-input:checked + .cabecalho__switch-slider {
+    background-color: #0073e6;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Container de exibição dos personagens */
+  .characters__container {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
