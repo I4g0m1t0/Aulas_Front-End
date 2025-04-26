@@ -1,0 +1,57 @@
+/* Container dos cards */
+.characters__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilo de cada card */
+.character__item {
+  direction: ltr; /* Garante que o conteúdo do card fique normal */
+  background-color: #ffffff;
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Hover elegante */
+.character__item:hover {
+  transform: translateY(-5px);
+  background-color: #f0f8ff;
+}
+
+/* Título centralizado */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Campo de busca */
+#searchInput {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+/* Botão de busca */
+#searchButton {
+  display: block;
+  margin: 0 auto 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: #0074a6;
+}

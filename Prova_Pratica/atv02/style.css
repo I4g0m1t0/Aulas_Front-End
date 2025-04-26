@@ -1,0 +1,52 @@
+/* estrutura principal em duas colunas */
+.main {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  /* coluna da imagem */
+  .aside-image img {
+    max-width: 900px;
+    height: auto;
+    display: block;
+    border: 1px solid #ccc;
+  }
+  
+  /* form + resultado */
+  .container {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    color: #000;
+  }
+  
+  h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px #000 solid;
+  }
+  
+  .campo {
+    margin-bottom: 8px;
+  }
+  
+  .campo label {
+    display: inline-block;
+    max-width: 200px;
+  }
+  
+  .campo input {
+    width: 150px;
+  }
+  
+  button {
+    padding: 6px 12px;
+  }
+  
+  #resultado {
+    white-space: pre-wrap; /*Com white-space: pre-wrap, sequências de \n no conteúdo renderizado são exibidas como quebras de linha*/
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
