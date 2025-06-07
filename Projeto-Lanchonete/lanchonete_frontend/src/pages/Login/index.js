@@ -18,7 +18,8 @@ const Login = () => {
     }
     try {
       const response = await api.post("/signin", { email, senha });
-      login("accessToken", response.data.accessToken);
+      console.log(response.data.accessToken);
+      login(response.data.accessToken);
       navigate("/app");
     } catch (err) {
       setError("Houve um problema com o login, verifique suas credenciais!!");
